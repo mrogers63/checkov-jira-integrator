@@ -1,4 +1,4 @@
-# Project Title
+# Checkov Results Manager
 
 This tool can be integrated into your pipelines to give you finding tracking capabilities with Checkov CLI. There are some oddities in it to meet requirements of $org.
 
@@ -18,3 +18,8 @@ needs JIRA user: ENV Variables JIRA_URL, SECURITY_JIRA_USER, SECURITY_JIRA_TOKEN
 jira_project_slug is the project name for work tracking
 
 How to run: checkov -d . --soft-fail --quiet -o json | python3 checkov-result-manager.py -b $BRANCH -p jira_project_slug
+
+Tickets look like this
+
+![image](https://github.com/mrogers63/checkov-jira-integrator/assets/29712752/53b981af-c152-4ed5-bbf8-6a104010c1fe)
+
